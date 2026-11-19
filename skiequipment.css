@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    
+    color: black;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+}
+.logo-icon {
+    font-size: 32px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    width: 260px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.card h3 {
+    color: #102b40;
+}
+
+
+footer {
+    
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

@@ -1,63 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkiShop</title>
+    <title>SNOW VALLEY | Lyžiarsky e-shop</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a58b7d038f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <span>⛷</span>
-            <h2>SNOW<br>VALLEY</h2>
+
+    <header class="header">
+
+        <div class="header-top">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⛷</span>
+                <span>SNOW<br>VALLEY</span>
+            </a>
+
+            <div class="search">
+                <span>⌕</span>
+                <input type="text" placeholder="Search for products, brands or categories...">
+            </div>
+
+            <div class="header-icons">
+                <a href="#" title="Obľúbené"><i class="fa-solid fa-heart fa-xs"></i></a>
+                <a href="#" title="Môj účet"><i class="fa-solid fa-user fa-xs"></i></a>
+                <a href="#" title="Košík"><i class="fa-solid fa-shopping-cart fa-xs"></i></a>
+            </div>
+
         </div>
 
-        <div class="search">
-            <span>🔍︎</span>
-            <input type="text" placeholder="Search">
-        </div>
+        <nav class="filter">
+            <a href="#">News</a>
+            <a href="#">Woman</a>
+            <a href="#">Men</a>
+            <a href="#">Children</a>
+            <a href="#">Brands</a>
+            <a href="#">Sale</a>
+        </nav>
 
-        <div class="icons">
-            <span>🛒Cart</span>
-            <span>👤Sign in</span>
-        </div>
     </header>
 
-    <div>
-        <a href="#">Home</a>
-        <a href="#">Man</a>
-        <a href="#">Woman</a>
-        <a href="#">Children</a>
-        <a href="#">Sale</a>
-    </div>
+
     <main>
-        <section class="skiman">
-            <div class="skiman-content">
-            </div>
-            <p class="small-title">WELCOME IN SNOW VALLEY</p>
-            <h1>Skies &<br>Snowboard</h1>
-            <p class="description">High-quality ski and snowboard equipment for all your winter adventures.</p>
+
+        <section class="skiingman">
+
+            <div class="skiingman-content">
+
+                <div class="skiingman-text">
+
+                    <p class="small-title">WELCOME TO SNOW VALLEY</p>
+
+                    <h1>
+                        Ski &<br>
+                        Snowboard
+                    </h1>
+
+                    <p class="description">
+                        Discover the world of winter sports with us.
+                        High-quality skiing and snowboarding equipment
+                        for every adventure on the slopes.
+                    </p>
+
+                    <p class="extra-text">
+                        Find your style. Feel the freedom. Enjoy the mountains.
+                    </p>
+
+                    
+
+                    <div class="features">
+
+                        <div class="feature">
+                            <span class="feature-icon">♧</span>
+                            <h3>Top Gear</h3>
+                            <p>Premium equipment<br>for all skill levels.</p>
+                        </div>
+
+                        <div class="feature">
+                            <span class="feature-icon">❄</span>
+                            <h3>Great Conditions</h3>
+                            <p>Perfect snow,<br>all season long.</p>
+                        </div>
+
+                        <div class="feature">
+                            <span class="feature-icon">♢</span>
+                            <h3>Safe Adventure</h3>
+                            <p>Your safety<br>is our priority.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="buttons">
-                <a href="#" class="btn">Skies</a>
-                <a href="#" class="btn">Snowboard</a>
-            </div>
+            <div class="skiingman-image">
+
+                <img src="https://npr.brightspotcdn.com/dims4/default/3561210/2147483647/strip/true/crop/1600x1000+0+0/resize/880x550!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F58%2Fc4%2F572cd1064014a64ea86b685356d2%2Fcopy-of-colter-hinchliffe-jh-nic-alegre-photo-3784.jpg" alt="Snow Valley">
+                    alt="Lyžiar na horách">
+
+                <div class="image-text">
+                    <p>WINTER COLLECTION</p>
+                    <h2>Live the mountain</h2>
+                </div>
+
             </div>
 
-            <div class="skiman-image">
-                <img src="https://i.natgeofe.com/n/15fa623e-4692-4343-8d71-4bacb740bed7/engelberg1_16x9.jpg?w=1200"
-                    alt="skiing man">
+        </section>
+
+
+        <section class="categories">
+
+            <div class="section-heading">
+                <div>
+                    <p class="small-title">EXPLORE OUR SHOP</p>
+                    <h2>Choose your adventure</h2>
+                </div>
+
+                <a href="#" class="view-all">View all →</a>
             </div>
+
+
+            <div class="category-container">
+
+                <a href="skiequipment.html" class="category-card">
+                    <img src="https://www.valthorens.com/app/uploads/2023/08/230407-ski-pistes-damees-l.brochot-ot-val-thorens-17-1024x620.webp"
+                        alt="Lyžovanie">
+                    <div class="category-info">
+                        <h3>Ski equipment</h3>
+                        <p>Everything for skiing</p>
+                    </div>
+                </a>
+
+                <a href="snowboarding2.html" class="category-card">
+                    <img src="https://www.dopesnow.com/images/wordpress-4582242/uploads/2025/03/history-of-snowboarding-dope-magazine-1.jpg"
+                        alt="Snowboarding">
+                    <div class="category-info">
+                        <h3>Snowboarding</h3>
+                        <p>Find your perfect board</p>
+                    </div>
+                </a>
+
+                <a href="clothing.html" class="category-card">
+                    <img src="https://www.rayburntours.com/wp-content/uploads/2022/02/BLOG_IMAGE_2.jpg" alt="Zimné oblečenie">
+                    <div class="category-info">
+                        <h3>Clothing</h3>
+                        <p>Stay warm and comfortable</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="bottom-banner">
+
+            <div>
+                <p class="small-title">READY FOR WINTER?</p>
+                <h2>Your next adventure starts here.</h2>
+            </div>
+
+            <a href="#" class="button">Explore collection →</a>
+
         </section>
 
     </main>
 
+
+    <footer class="footer">
+
+        <a href="index.html" class="footer-logo">SNOW VALLEY</a>
+
+        <p>Enjoy every moment on the slopes.</p>
+
+        <p class="copyright">© 2026 SNOW VALLEY. All rights reserved.</p>
+
+    </footer>
 
 </body>
 

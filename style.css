@@ -5,147 +5,503 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    color: #222;
+    color: #333;
 }
 
-header {
+
+.header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header-top {
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5%;
+    padding: 0 4%;
     gap: 30px;
-    background: #000;
-    color: white;
-
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
 }
 
-.logo span {
-    font-size: 30px;
-
+.logo-icon {
+    font-size: 32px;
 }
 
-.logo h2 {
-    font-size: 20px;
-    line-height: 20px;
-}
 
 .search {
+    flex: 1;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
     display: flex;
     align-items: center;
-    background-color: white;
-    border-radius: 25px;
-    padding: 10px 20px;
-    width: 50%;
-    color: black;
+    padding: 0 16px;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.search:focus-within {
+    background-color: #e9e9e9;
 }
 
 .search span {
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 23px;
 }
 
 .search input {
+    width: 100%;
     border: none;
     outline: none;
     background: transparent;
-    width: 100%;
     font-size: 13px;
 }
 
-.icons {
+
+.header-icons {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 23px;
 }
 
-.icons a {
-    color: #222;
+.header-icons a {
     text-decoration: none;
+    color: black;
     font-size: 25px;
+    transition: 0.3s;
 }
 
-div {
+.header-icons a:hover {
+    color: #888;
+    transform: translateY(-2px);
+}
+
+
+.filter {
+    height: 45px;
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 35px;
-    padding: 15px;
-    border-bottom: 1px solid #eeeeee;
 }
 
-div a {
+.filter a {
     text-decoration: none;
     color: #333;
-    font-size: 14px;
-    font-weight: bold;
-
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-div a:hover {
-    color: #888;
+.filter a:hover {
+    color: #999;
 }
 
-.skiman {
+
+.skiingman {
     display: flex;
-    gap: 15px;
-    padding: 20px;
-    height: 520px;
+    gap: 12px;
+    padding: 15px 2%;
+    min-height: 500px;
 }
 
-.skiman-content {
+.skiingman-content {
     width: 40%;
-    background-color: #eeeeee;
-    border-radius: 12px;
-    padding: 35px;
+    background-color: #f1f1f1;
+    border-radius: 13px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .small-title {
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 2px;
     color: #777;
+    margin-bottom: 18px;
+}
+
+.skiingman-text h1 {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.05;
     margin-bottom: 20px;
 }
+
 .description {
     font-size: 14px;
-    line-height: 1.6;
     color: #555;
-    margin-bottom: 20px;
+    line-height: 1.7;
+    max-width: 420px;
 }
-.buttons {
+
+.extra-text {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+
+.features {
+    display: flex;
+    margin-top: 40px;
+    max-width: 680px;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 0 15px;
+    border-right: 1px solid #ccc;
+}
+
+.feature:first-child {
+    padding-left: 0;
+}
+
+.feature:last-child {
+    border-right: none;
+}
+
+.feature-icon {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.feature h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #888;
+    margin: 0;
+}
+
+
+.skiingman-buttons {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
 }
-.buttons a {
+
+.button {
+    display: inline-block;
     text-decoration: none;
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
+    color: #222;
+    border: 1px solid #333;
     border-radius: 25px;
-    font-size: 14px;
+    padding: 12px 22px;
+    font-size: 13px;
+    transition: 0.3s;
 }
-.buttons a:hover {
+
+.button span {
+    margin-left: 8px;
+}
+
+.button:hover {
     background-color: #222;
     color: white;
 }
-.skiman-image {
+
+
+.skiingman-image {
     width: 60%;
-   overflow: hidden;
-    border-radius: 12px;
-    
+    position: relative;
+    overflow: hidden;
+    border-radius: 13px;
 }
-.skiman-image img {
+
+.skiingman-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+.skiingman-image:hover img {
+    transform: scale(1.03);
+}
+
+.image-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    text-shadow: 0 2px 8px #333;
+}
+
+.image-text p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.image-text h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.categories {
+    padding: 55px 4%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-heading .small-title {
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.view-all {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.view-all:hover {
+    color: #999;
+}
+
+.category-container {
+    display: flex;
+    gap: 18px;
+}
+
+.category-card {
+    width: 33.33%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.category-card:hover img {
+    transform: scale(1.06);
+}
+
+.category-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.category-info h3 {
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.category-info p {
+    font-size: 13px;
+}
+
+
+.bottom-banner {
+    margin: 20px 4% 55px;
+    padding: 35px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-banner .small-title {
+    margin-bottom: 10px;
+}
+
+.bottom-banner h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.footer-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 12px;
+}
+
+.footer .copyright {
+    margin-top: 25px;
+    font-size: 11px;
+}
+
+
+@media (max-width: 768px) {
+
+    .header-top {
+        height: 65px;
+        gap: 12px;
+        padding: 0 3%;
+    }
+
+    .logo {
+        font-size: 11px;
+    }
+
+    .logo-icon {
+        font-size: 24px;
+    }
+
+    .search {
+        height: 35px;
+    }
+
+    .search input {
+        font-size: 11px;
+    }
+
+    .header-icons {
+        gap: 10px;
+    }
+
+    .header-icons a {
+        font-size: 20px;
+    }
+
+    .filter {
+        gap: 20px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0 15px;
+    }
+
+    .filter a {
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+    .skiingman {
+        flex-direction: column;
+    }
+
+    .skiingman-content,
+    .skiingman-image {
+        width: 100%;
+    }
+
+    .skiingman-content {
+        min-height: 350px;
+        padding: 23px;
+    }
+
+    .skiingman-image {
+        height: 300px;
+    }
+
+    .skiingman-text h1 {
+        font-size: 40px;
+    }
+
+    .image-text h2 {
+        font-size: 24px;
+    }
+
+    .categories {
+        padding: 35px 4%;
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .category-container {
+        flex-direction: column;
+    }
+
+    .category-card {
+        width: 100%;
+        height: 250px;
+    }
+
+    .bottom-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .bottom-banner h2 {
+        font-size: 21px;
+    }
+
+    .features {
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .feature {
+        padding: 0 5px;
+    }
+
+    .feature-icon {
+        font-size: 28px;
+    }
+
+    .feature h3 {
+        font-size: 13px;
+    }
+
+    .feature p {
+        font-size: 11px;
+    }
+
 }
